@@ -66,8 +66,11 @@ function login() {
     let email = document.querySelector('input[type="email"]').value;
     let pass = document.querySelector('input[type="password"]').value;
 
-    // كلمة المرور الافتراضية المؤقتة
     if(email === "admin@globaltrade.com" && pass === "12345") {
+
+        // حفظ تسجيل الدخول
+        localStorage.setItem("admin_logged", "yes");
+
         window.location.href = "admin_dashboard.html";
     } else {
         document.getElementById("msg").innerText = "البيانات غير صحيحة";
