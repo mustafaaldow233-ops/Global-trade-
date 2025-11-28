@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>إدارة المستخدمين | لوحة الإدارة</title>
+</head>
+
+<body>
+
+<header class="header">
+    <h1>إدارة المستخدمين</h1>
+</header>
+
+<section class="users-container">
+
+    <table class="users-table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>الاسم</th>
+                <th>الإيميل</th>
+                <th>الدولة</th>
+                <th>الحالة</th>
+                <th>تحكم</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>محمد أحمد</td>
+                <td>test@example.com</td>
+                <td>السودان</td>
+                <td>نشط</td>
+                <td>
+                    <button onclick="location.href='admin_user_details.html'">عرض</button>
+                    <button class="ban-btn">حظر</button>
+                </td>
+            </tr>
+        </tbody>
+
+    </table>
+
+</section>
+
+<style>
+    body {font-family: Arial;}
+    .users-container {
+        width: 95%;
+        margin: 20px auto;
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        background: #fff;
+        box-shadow: 0 0 5px #ccc;
+    }
+    th, td {
+        padding: 12px;
+        border-bottom: 1px solid #ddd;
+        text-align: center;
+    }
+    button {
+        padding: 6px 10px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .ban-btn {
+        background: #c00;
+        color: #fff;
+    }
+</style>
+
+</body>
+</html>
