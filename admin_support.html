@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>الدعم الفني | لوحة الإدارة</title>
+</head>
+
+<body>
+
+<header class="header">
+    <h1>الدعم الفني – الرسائل</h1>
+</header>
+
+<section class="support-container">
+
+    <table class="support-table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>اسم المستخدم</th>
+                <th>الإيميل</th>
+                <th>المشكلة</th>
+                <th>الحالة</th>
+                <th>تحكم</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>12</td>
+                <td>خالد عثمان</td>
+                <td>khalid@email.com</td>
+                <td>مشكلة في الدفع</td>
+                <td>جديد</td>
+                <td>
+                    <button onclick="location.href='admin_support_view.html'">عرض</button>
+                    <button class="close-btn">إغلاق</button>
+                </td>
+            </tr>
+        </tbody>
+
+    </table>
+
+</section>
+
+<style>
+    body {font-family: Arial;}
+    .support-container {
+        width: 95%;
+        margin: 20px auto;
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        background: #fff;
+        box-shadow:0 0 5px #ccc;
+    }
+    th, td {
+        padding: 12px;
+        border-bottom:1px solid #ddd;
+        text-align:center;
+    }
+    .close-btn {
+        padding:6px 12px;
+        background:#d00;
+        color:#fff;
+        border:none;
+        border-radius:5px;
+    }
+</style>
+
+</body>
+</html>
