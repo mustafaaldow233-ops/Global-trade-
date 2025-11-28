@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>تفاصيل الطلب | لوحة الإدارة</title>
+</head>
+
+<body>
+
+<header class="header">
+    <h1>تفاصيل الطلب</h1>
+</header>
+
+<section class="details">
+
+    <h3>معلومات العميل</h3>
+    <p>الاسم: محمد علي</p>
+    <p>الدولة: السعودية</p>
+
+    <h3>محتويات الطلب</h3>
+    <ul>
+        <li>هاتف سامسونج – 450$</li>
+        <li>سماعات – 30$</li>
+    </ul>
+
+    <h3>حالة الطلب</h3>
+
+    <select>
+        <option>قيد التجهيز</option>
+        <option>تم الشحن</option>
+        <option>تم التوصيل</option>
+        <option>ملغي</option>
+    </select>
+
+    <button class="update-btn">تحديث الحالة</button>
+
+</section>
+
+<style>
+    body {font-family: Arial;}
+    .details {
+        width: 90%;
+        max-width: 600px;
+        margin: 20px auto;
+    }
+    .update-btn {
+        margin-top: 15px;
+        padding: 10px;
+        width: 100%;
+        background: #28a745;
+        color: #fff;
+        border:none;
+        border-radius: 6px;
+        cursor:pointer;
+    }
+</style>
+
+</body>
+</html>
