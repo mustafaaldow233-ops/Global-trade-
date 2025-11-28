@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>حسابي | التجارة العالمية</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header class="header">
+    <h1>حسابي</h1>
+</header>
+
+<section class="account-container">
+
+    <div class="account-box">
+        <h2>معلوماتي</h2>
+        <p>الاسم: <strong>اسم العميل</strong></p>
+        <p>البريد: user@example.com</p>
+        <p>الدولة: السودان</p>
+        <a class="btn" href="#">تعديل المعلومات</a>
+    </div>
+
+    <div class="account-box">
+        <h2>طلباتي</h2>
+        <ul>
+            <li>طلب #GT-2025-001 – جاري التجهيز</li>
+            <li>طلب #GT-2024-554 – تم التوصيل</li>
+        </ul>
+        <a class="btn" href="#">عرض جميع الطلبات</a>
+    </div>
+
+    <div class="account-box">
+        <h2>الاشتراك المميز</h2>
+        <p>الحالة: غير مشترك</p>
+        <a class="btn premium" href="#">تفعيل بـ 10 دولار</a>
+    </div>
+
+    <div class="account-box">
+        <h2>المفضلة</h2>
+        <p>لم تضف أي منتجات بعد</p>
+        <a class="btn" href="#">تصفح المنتجات</a>
+    </div>
+
+    <div class="account-box">
+        <h2>الدعم</h2>
+        <a class="btn" href="support.html">فتح تذكرة دعم</a>
+    </div>
+
+    <div class="account-box">
+        <h2>الإعدادات</h2>
+        <a class="btn" href="#">تغيير كلمة السر</a>
+        <a class="btn" href="#">اللغة</a>
+    </div>
+
+    <div class="account-box logout">
+        <a class="btn logout-btn" href="index.html">تسجيل الخروج</a>
+    </div>
+
+</section>
+
+<style>
+    body {font-family: Arial;}
+    .account-container {
+        width: 90%;
+        margin: 20px auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 15px;
+    }
+    .account-box {
+        background: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 5px #ccc;
+        text-align: right;
+    }
+    .btn {
+        background: #0a7cff;
+        color: #fff;
+        text-decoration: none;
+        padding: 10px;
+        margin-top: 10px;
+        display: inline-block;
+        border-radius: 6px;
+    }
+    .premium {background: #ffa500;}
+    .logout-btn {background: #d00;}
+</style>
+
+</body>
+</html>
