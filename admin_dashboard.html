@@ -94,6 +94,10 @@ function logout() {
         padding-bottom:5px;
     }
 </style>
-
+function logout() {
+    localStorage.removeItem("admin_logged");
+    window.location.href = "admin_login.html";
+}
+</script>
 </body>
 </html>
