@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>لوحة التحكم | الإحصائيات</title>
+</head>
+
+<body>
+
+<header class="header">
+    <h1>لوحة التحكم – الإحصائيات</h1>
+</header>
+
+<section class="stats-container">
+
+    <div class="stat-box">
+        <h3>عدد المستخدمين</h3>
+        <p>2450</p>
+    </div>
+
+    <div class="stat-box">
+        <h3>عدد المنتجات</h3>
+        <p>812</p>
+    </div>
+
+    <div class="stat-box">
+        <h3>عدد الطلبات</h3>
+        <p>1290</p>
+    </div>
+
+    <div class="stat-box">
+        <h3>عدد المشتركين</h3>
+        <p>340</p>
+    </div>
+
+</section>
+
+<h2 style="text-align:center;margin-top:40px;">الأرباح الشهرية</h2>
+
+<section class="chart">
+    <div class="bar" style="height: 30%;">يناير</div>
+    <div class="bar" style="height: 50%;">فبراير</div>
+    <div class="bar" style="height: 70%;">مارس</div>
+    <div class="bar" style="height: 45%;">أبريل</div>
+</section>
+
+<style>
+    body { font-family: Arial; background:#f8f8f8; }
+    .stats-container {
+        width: 95%;
+        margin: 20px auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+    .stat-box {
+        background:#fff;
+        padding:20px;
+        border-radius:10px;
+        text-align:center;
+        box-shadow:0 0 5px #ccc;
+    }
+    .chart {
+        width: 90%;
+        margin: 20px auto;
+        display: flex;
+        gap: 15px;
+        justify-content: center;
+    }
+    .bar {
+        width: 60px;
+        background:#3498db;
+        color:#fff;
+        text-align:center;
+        display:flex;
+        align-items:flex-end;
+        justify-content:center;
+        border-radius:5px;
+        padding-bottom:5px;
+    }
+</style>
+
+</body>
+</html>
