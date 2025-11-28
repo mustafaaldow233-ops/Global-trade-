@@ -1,8 +1,8 @@
 {
   "name": "global-trade-platform",
   "version": "1.0.0",
+  "description": "Global Trade Platform Website",
   "main": "index.js",
-  "type": "module",
   "scripts": {
     "start": "node index.js"
   },
