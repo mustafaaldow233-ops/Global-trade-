@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>إدارة المنتجات | لوحة الإدارة</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header class="header">
+    <h1>إدارة المنتجات</h1>
+    <a href="admin.html">رجوع للوحة التحكم</a>
+</header>
+
+<section class="admin-table-container">
+
+    <button class="add-btn" onclick="location.href='admin_add_product.html'">إضافة منتج جديد</button>
+
+    <table class="admin-table">
+        <tr>
+            <th>ID</th>
+            <th>الصورة</th>
+            <th>الاسم</th>
+            <th>السعر</th>
+            <th>التحكم</th>
+        </tr>
+
+        <!-- منتج 1 كمثال -->
+        <tr>
+            <td>1</td>
+            <td><img src="https://via.placeholder.com/50"></td>
+            <td>منتج تجريبي</td>
+            <td>20$</td>
+            <td>
+                <button onclick="location.href='admin_edit_product.html'">تعديل</button>
+                <button class="delete-btn">حذف</button>
+            </td>
+        </tr>
+
+    </table>
+
+</section>
+
+<style>
+    body {font-family: Arial;}
+    .admin-table-container {
+        width: 95%;
+        margin: 20px auto;
+    }
+    .admin-table {
+        width: 100%;
+        border-collapse: collapse;
+        background:#fff;
+        box-shadow: 0 0 5px #ccc;
+    }
+    th, td {
+        padding: 12px;
+        border: 1px solid #ccc;
+        text-align:center;
+    }
+    img {border-radius:5px;}
+    .add-btn {
+        padding: 10px 15px;
+        background: #28a745;
+        color:white;
+        border:none;
+        margin-bottom:10px;
+        border-radius:5px;
+        cursor:pointer;
+    }
+    .delete-btn {
+        background:#d00;
+        color:#fff;
+        border:none;
+        padding:8px;
+        border-radius:5px;
+    }
+</style>
+
+</body>
+</html>
