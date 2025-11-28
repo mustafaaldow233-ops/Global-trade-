@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>الدعم الفني | التجارة العالمية</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header class="header">
+    <h1>الدعم الفني</h1>
+    <a href="account.html">رجوع لحسابي</a>
+</header>
+
+<section class="support-container">
+
+    <form class="support-form">
+
+        <h2>فتح تذكرة دعم</h2>
+
+        <label>الاسم الكامل</label>
+        <input type="text" placeholder="اكتب اسمك" required>
+
+        <label>البريد الإلكتروني</label>
+        <input type="email" placeholder="email@example.com" required>
+
+        <label>نوع المشكلة</label>
+        <select required>
+            <option disabled selected>اختر نوع المشكلة</option>
+            <option>مشاكل الدفع</option>
+            <option>مشاكل الطلبات</option>
+            <option>مشاكل الحساب</option>
+            <option>مشاكل الشحن</option>
+            <option>أخرى</option>
+        </select>
+
+        <label>شرح المشكلة</label>
+        <textarea placeholder="اكتب وصف المشكلة بالتفصيل" required></textarea>
+
+        <label>رفع صورة (اختياري)</label>
+        <input type="file" accept="image/*">
+
+        <button type="submit" class="send-btn">إرسال الطلب</button>
+    </form>
+
+</section>
+
+<style>
+    body {font-family: Arial;}
+    .support-container {
+        width: 90%;
+        max-width: 600px;
+        margin: 20px auto;
+    }
+    .support-form {
+        background: #fff;
+        padding: 25px;
+        border-radius: 8px;
+        box-shadow: 0 0 5px #ccc;
+    }
+    textarea, input, select {
+        width: 100%;
+        padding: 10px;
+        margin: 8px 0;
+        border-radius: 6px;
+        border: 1px solid #aaa;
+    }
+    .send-btn {
+        width: 100%;
+        padding: 12px;
+        background: #0a7cff;
+        color: #fff;
+        border: none;
+        border-radius: 6px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+</style>
+
+</body>
+</html>
