@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>سلة المشتريات | التجارة العالمية</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header class="header">
+    <h1>سلة المشتريات</h1>
+    <a href="products.html">رجوع للمنتجات</a>
+</header>
+
+<section class="cart-container">
+
+    <table class="cart-table">
+        <tr>
+            <th>المنتج</th>
+            <th>السعر</th>
+            <th>الكمية</th>
+            <th>الإجمالي</th>
+            <th>إزالة</th>
+        </tr>
+
+        <!-- منتج 1 -->
+        <tr>
+            <td>منتج 1</td>
+            <td>20$</td>
+            <td>
+                <input type="number" value="1" min="1">
+            </td>
+            <td>20$</td>
+            <td><button class="remove-btn">✖</button></td>
+        </tr>
+
+        <!-- منتج 2 -->
+        <tr>
+            <td>منتج 2</td>
+            <td>15$</td>
+            <td>
+                <input type="number" value="2" min="1">
+            </td>
+            <td>30$</td>
+            <td><button class="remove-btn">✖</button></td>
+        </tr>
+
+    </table>
+
+    <div class="cart-summary">
+        <h3>الإجمالي الكلي: <span>50$</span></h3>
+        <button class="checkout-btn">متابعة إتمام الطلب</button>
+    </div>
+
+</section>
+
+<script src="js/main.js"></script>
+</body>
+</html>
