@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>إتمام الطلب | التجارة العالمية</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header class="header">
+    <h1>إتمام الطلب</h1>
+    <a href="cart.html">رجوع للسلة</a>
+</header>
+
+<section class="checkout-container">
+
+    <form class="checkout-form">
+
+        <h2>معلومات العميل</h2>
+
+        <label>الاسم الكامل</label>
+        <input type="text" placeholder="اكتب اسمك" required>
+
+        <label>رقم الهاتف</label>
+        <input type="tel" placeholder="مثال: 0123456789" required>
+
+        <label>البريد الإلكتروني</label>
+        <input type="email" placeholder="email@example.com">
+
+        <h2>العنوان</h2>
+
+        <label>الدولة</label>
+        <input type="text" placeholder="الدولة" required>
+
+        <label>المدينة</label>
+        <input type="text" placeholder="المدينة" required>
+
+        <label>العنوان الكامل</label>
+        <textarea placeholder="اكتب العنوان بالتفصيل" required></textarea>
+
+        <h2>طريقة الدفع</h2>
+
+        <label><input type="radio" name="pay" checked> الدفع عند الاستلام</label><br>
+        <label><input type="radio" name="pay"> بطاقة بنكية</label><br>
+        <label><input type="radio" name="pay"> محفظة إلكترونية</label>
+
+        <button type="submit" class="confirm-btn">تأكيد الطلب</button>
+
+    </form>
+
+</section>
+
+<script src="js/main.js"></script>
+</body>
+</html>
